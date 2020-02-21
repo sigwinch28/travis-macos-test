@@ -15,21 +15,17 @@ matrix:
   include:
     - os: osx
       osx_image: xcode11
-      env: MAKE_PARAMS='PLATFORM_EXTRAS='
-    - os: osx
-      osx_image: xcode11
-      env: MAKE_PARAMS='PLATFORM_EXTRAS=BTADDON'
 
 addons:
   homebrew:
     packages:
-      - python3
+      - python
     update: true
 
 install:
   echo "Installed"
 
 script:
-  echo $PATH
-  which python3
+  - echo $PATH
+  - which python3
   
