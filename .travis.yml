@@ -26,6 +26,7 @@ install:
   echo "Installed"
 
 script:
+  - export PATH="/usr/local/opt/python@3.8/bin:$PATH"
   - echo $PATH
   - which python3
   
